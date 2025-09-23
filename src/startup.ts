@@ -1,6 +1,7 @@
 import { loadDataInDropDown } from "./uiActions";
 import { mainWindow } from "./mainWindow";
 import { pluginName } from "./pluginName";
+import { callCalcAndUpdatePrices } from "./uiActions";
 
 /**
  * Starting point
@@ -29,6 +30,7 @@ export function startup()
 {
 	// Write code here that should happen on startup of the plugin.
 	ui.registerShortcut(shortcutOpenWindow)
+	callCalcAndUpdatePrices()
 
 
 	// Register a menu item under the map icon:
