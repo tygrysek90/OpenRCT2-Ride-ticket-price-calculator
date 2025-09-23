@@ -23,6 +23,7 @@ function onPluginGUIopen()
 {
 	loadDataInDropDown()
 	mainWindow.open()
+	callCalcAndUpdatePrices()
 }
 
 
@@ -30,7 +31,6 @@ export function startup()
 {
 	// Write code here that should happen on startup of the plugin.
 	ui.registerShortcut(shortcutOpenWindow)
-	callCalcAndUpdatePrices()
 
 
 	// Register a menu item under the map icon:
